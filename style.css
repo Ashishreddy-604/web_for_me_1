@@ -1,0 +1,117 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left; /* Changed from center */
+}
+
+header {
+  border-bottom: 1px solid #444;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  color: #eee; /* Lighter heading color */
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+code {
+  background-color: #333;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+  font-size: 0.9em;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Basic link styling */
+a {
+  color: #64b5f6; /* Light blue link color */
+  text-decoration: none; /* Remove underline */
+}
+a:hover {
+  color: #90caf9; /* Lighter blue on hover */
+  text-decoration: underline;
+}
+
+/* Light mode adjustments (optional, but good practice) */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  header, footer {
+    border-color: #ddd;
+  }
+  h1 {
+    color: #1a1a1a;
+  }
+  h2 {
+    color: #333;
+  }
+  code {
+    background-color: #eee;
+    color: #333;
+  }
+  footer {
+    color: #555;
+  }
+  a {
+    color: #0d47a1; /* Darker blue for light mode */
+  }
+  a:hover {
+    color: #1976d2;
+  }
+}
